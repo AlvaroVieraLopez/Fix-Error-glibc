@@ -22,14 +22,12 @@ ldd --version
 
 ```
 
-In my case, I needed a container with 'glibc' version 2.31. You can create this container using Docker:
+In my case, I needed a container with 'glibc' version 2.31. You can create this container using Docker (Ask Chat GTP which ubuntu's version you need):
 
 ```bash
 docker run -it --rm ubuntu:20.04 bash
 
 ```
-
-(Ask Chat GTP)
 
 Check the glibc Version in the Docker container:
 
