@@ -10,6 +10,8 @@ I was trying to execute an exploit (DirtyPipe) on a Hack The Box (HTB) machine. 
 bash
 /lib/x86_x84-linu-gnu/libc.so.6: version 'GLIBC_2.33' not found
 
+![Error](error.png)
+
 This error occurs due to a mismatch in the glibc (GNU C Library) version between the host where the exploit was compiled and the host where it is being executed. The compiled program is incompatible with the glibc version on the victim host.
 
 
@@ -21,6 +23,8 @@ To fix this error, you need to compile the exploit on a host with the same versi
 ldd --version
 
 ```
+
+![Error](version.png)
 
 In my case, I needed a container with 'glibc' version 2.31. You can create this container using Docker (Ask Chat GTP which ubuntu's version you need):
 
