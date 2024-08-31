@@ -17,22 +17,33 @@ This error occurs due to a mismatch in the glibc (GNU C Library) version between
 
 To fix this error, you need to compile the exploit on a host with the same version of glibc as the target host. If you don't have a host with the required version, you can create a container with that version. First, you need to determine the glibc version on the target system. You can do this using the ldd command:
 
-bash
+```bash
 ldd --version
+
+```
 
 In my case, I needed a container with 'glibc' version 2.31. You can create this container using Docker:
 
+```bash
 docker run -it --rm ubuntu:20.04 bash
+
+```
 
 (Ask Chat GTP)
 
 Check the glibc Version in the Docker container:
 
-ldd --versiom
+```bash
+ldd --version
+
+```
 
 Install the gcc Compiler:
 
+```bash
 apt install gcc
+
+```
 
 Compile the Exploit:
 
