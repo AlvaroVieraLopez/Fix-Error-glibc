@@ -1,4 +1,4 @@
-# Fix for GLIBC Version 'GLIBC_2.33' Not Found Error
+# Fix for GLIBC Version 'GLIBC_X.XX' Not Found Error
 How to fix an error execution error of a file compiled in other host
 
 # Error: [/lib/x86_x84-linu-gnu/libc.so.6: version 'GLIBC_2.33' not found]
